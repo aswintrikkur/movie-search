@@ -3,6 +3,8 @@ import "./FilmRolls.css";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import axios, { Axios } from "axios";
+import Typed from "react-typed";
+import { SingIn } from "../Sign-in/SingIn";
 
 export const FilmRolls = () => {
 	const [movieList, setMovieList] = useState([]);
@@ -33,23 +35,22 @@ export const FilmRolls = () => {
 
 	console.log(movieList);
 
-
-
 	return (
 		<div>
 			<main>
 				<Header />
 
-				<body>
-					<div className="img-container">
-						{movieList.map((data) => (
-							<div className="item">
-								<img src={`https://image.tmdb.org/t/p/w500/${data.poster_path}`} alt="img" />
-								 <p>{data.title}</p> 
-							</div>
-						))}
-					</div>
-				</body>
+				<div className="img-container">
+					{movieList.map((data) => (
+						<div className="item" key={data.id} >
+							<img src={`https://image.tmdb.org/t/p/w500/${data.poster_path}`} alt="img" />
+							{/* <p>{data.title}</p>   */}
+						</div>
+					))}
+				</div>
+            <div className="body">
+              <SingIn />
+            </div>
 
 				<Footer />
 			</main>

@@ -8,24 +8,41 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-    overflow: hidden;
-}
-body {
-	/* width: 100vw; */
-	height: 60vh;
+    align-items: center;
+
+    
 }
 .img-container {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr); 
-	grid-template-rows: repeat(5, 1fr); 
-	/* gap: 10px; */
+    background-color: rgb(34, 34, 34);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+    padding: 0 20px;
+    /* background-color: black; */
+    display: grid;
+	grid-template-columns: repeat(6, 1fr); 
+    grid-column-gap: 50px;
 }
 .item {
-	background-color: rgba(0, 0, 0, 0.404);
 	/* padding: 5px; */
 	border: 1px solid white;
 	width: fit-content;
 }
 .img-container img {
-	width: 140px;
+	width: 166px;
+    /* height: 248px; */
+
+
+}
+.body{
+    background-color: var(--bgc-secondary);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }

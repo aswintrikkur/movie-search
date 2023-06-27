@@ -1,4 +1,5 @@
 footer {
+	width: 100vw;
 	height: 160px;
 	/* padding: 15px 0; */
 	background-color: var(--bgc-primary);
@@ -9,6 +10,9 @@ footer {
 	gap: 60px;
 	font-size: 14px;
 	font-weight: 300;
+
+	/* position: absolute; */
+	/* bottom: 0; */
 }
 .footer-section {
 	display: flex;
