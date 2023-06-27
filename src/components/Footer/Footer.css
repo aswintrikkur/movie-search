@@ -1,0 +1,37 @@
+footer {
+	height: 160px;
+	/* padding: 15px 0; */
+	background-color: var(--bgc-primary);
+    color: var(--color-secondary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+	font-size: 14px;
+	font-weight: 300;
+}
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.footer-section h4 {
+	font-weight: 300;
+	font-size: 14px;
+}
+.drop-down {
+	border: 1px solid var(--color-secondary);
+    width: 120px;
+    height: 40px;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	/* padding: 10px; */
+}
+.drop-down .fa-globe {
+	color: #999999;
+}
+.footer-icons {
+	display: flex;
+	gap: 15px;
+}

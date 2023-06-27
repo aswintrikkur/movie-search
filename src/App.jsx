@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import { FilmRolls } from './pages/FilmRolls/FilmRolls'
 
 function App() {
 
   return (
     <>
-   
-      <h1> movie search app </h1>
+
+    <FilmRolls/>
+      {/* <h1> movie search app </h1> */}
 
     </>
   )

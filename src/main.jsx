@@ -5,7 +5,5 @@ import './style/global.css'
 import 'typeface-roboto'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>,
 )
