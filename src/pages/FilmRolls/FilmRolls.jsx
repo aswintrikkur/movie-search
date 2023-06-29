@@ -6,7 +6,8 @@ import axios, { Axios } from "axios";
 import Typed from "react-typed";
 import { SingIn } from "../Sign-in/SingIn";
 
-export const FilmRolls = () => {
+
+export const FilmRolls = ({children}) => {
 	const [movieList, setMovieList] = useState([]);
 
 	const movieAPI =
@@ -49,7 +50,8 @@ export const FilmRolls = () => {
 					))}
 				</div>
             <div className="body">
-              <SingIn />
+				{children}
+              {/* <SingIn /> */}
             </div>
 
 				<Footer />
