@@ -1,7 +1,11 @@
 import React from "react";
 import "./Header.css";
+import { useNavigate } from "react-router";
 
 export const Header = () => {
+	const navigate= useNavigate();
+
+
 	return (
 		<div>
 			<div className="header-container">
@@ -10,9 +14,9 @@ export const Header = () => {
 					<h3>FilmRolls</h3>
 				</div>
 
-				<div className="header-btn">
+				<div className="header-btn" > 
 					<button> light mode </button>
-					<button> sign in</button>
+					<button onClick={()=>navigate('/signin')} > sign in</button>
 				</div>
 			</div>
 		</div>
