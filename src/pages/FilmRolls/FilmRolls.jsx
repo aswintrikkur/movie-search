@@ -3,7 +3,7 @@ import "./FilmRolls.css";
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 import axios, { Axios } from "axios";
-import { SingIn } from "../Sign-in/SingIn";
+import { SingIn } from "../Sign-in/SignIn";
 
 
 export const FilmRolls = ({children}) => {

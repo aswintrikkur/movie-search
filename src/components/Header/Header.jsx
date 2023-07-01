@@ -16,7 +16,9 @@ export const Header = () => {
 
 				<div className="header-btn" > 
 					<button> light mode </button>
-					<button onClick={()=>navigate('/signin')} > sign in</button>
+					<button onClick={()=>navigate('/signin')} > sign in </button>
+					<button onClick={()=>navigate('/signup')} > sign up</button>
+
 				</div>
 			</div>
 		</div>

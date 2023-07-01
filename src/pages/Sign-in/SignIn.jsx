@@ -20,7 +20,7 @@ export const SingIn = () => {
 		<div className="form-container">
 			<h2>Sign In</h2>
 			<form >
-				<div className="sign-in-btn-container">
+				<div className="form-input-container">
 					<input
 						type="text"
 						name="email"
@@ -49,8 +49,8 @@ export const SingIn = () => {
 						Sign In
 					</button>
 
-				</div>
 					<p className="forgot-password">Forgot Password?</p>
+				</div>
 				<div className="sign-up-container">
 					<p>New to FilmRolls ?</p> <span>Sign Up now</span>
 				</div>
