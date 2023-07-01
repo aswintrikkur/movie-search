@@ -1,8 +1,12 @@
 import React from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
+import { useNavigate } from "react-router-dom";
 
 export const SignUp = () => {
+
+  const navigate =useNavigate();
+
 	return (
 		<div className="form-container">
 			<Formik
@@ -14,6 +18,7 @@ export const SignUp = () => {
 				})}
 			>
 				<Form>
+        <button className="close-btn" type="cancel" onClick={()=>{navigate('/')}} > X </button>
 					<div className="form-input-container">
 						<h2>Registration </h2>
 

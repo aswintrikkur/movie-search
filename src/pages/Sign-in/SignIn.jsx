@@ -20,6 +20,7 @@ export const SingIn = () => {
 		<div className="form-container">
 			<h2>Sign In</h2>
 			<form >
+			<button className="close-btn"  onClick={()=>{navigate('/')}} > X </button>
 				<div className="form-input-container">
 					<input
 						type="text"
@@ -52,7 +53,7 @@ export const SingIn = () => {
 					<p className="forgot-password">Forgot Password?</p>
 				</div>
 				<div className="sign-up-container">
-					<p>New to FilmRolls ?</p> <span>Sign Up now</span>
+					<p>New to FilmRolls ?</p> <span onClick={()=>navigate('/signup')} >Sign Up now</span>
 				</div>
 			</form>
 		</div>
