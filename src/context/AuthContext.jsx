@@ -5,9 +5,18 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
 	const [auth, setAuth] = useState(false);
 
+	const user =localStorage.getItem('user')
+
+
 	const authToggle = () => {
-		setAuth((prev) => !prev);
+		if (user) {
+			setAuth(true);
+			return;
+		}
+		setAuth(false);
 	};
+
+
 
 	return <AuthContext.Provider value={{ auth, authToggle }}>{children}</AuthContext.Provider>;
 };

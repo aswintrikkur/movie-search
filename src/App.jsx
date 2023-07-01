@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { FilmRolls } from "./pages/FilmRolls/FilmRolls";
-import { Intro } from "./pages/Intro";
+import { Intro } from "./pages/Intro/Intro";
 import { SingIn } from "./pages/Sign-in/SingIn";
 import { Route, Routes } from "react-router";
 import { Home } from "./pages/Home/Home";

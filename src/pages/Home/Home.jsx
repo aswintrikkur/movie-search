@@ -1,12 +1,17 @@
-import React from 'react'
-import './Home.css'
+import React, { useState } from "react";
+import "./Home.css";
 
 export const Home = () => {
-  return (
-    <div className='home-container' >
-        <h3>Search for movies...</h3>
-        <input type="text" placeholder='search here' />
 
-    </div>
-  )
-}
+
+
+	return (
+		<div className="home-container">
+			<div className="search-bar-container">
+				<i className="fa-solid fa-magnifying-glass"> </i>
+				<input type="text" placeholder="search here"  />
+        <i className="fa-solid fa-xmark"></i>
+			</div>
+		</div>
+	);
+};
