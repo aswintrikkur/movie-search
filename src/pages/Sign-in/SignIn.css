@@ -58,7 +58,7 @@ form .sign-in, .sign-up {
 }
 form .forgot-password {
 	align-self: self-end;
-    color: var(--color-secondary);
+    color: var(--color-secondary);   
 }
 form p,
 span {

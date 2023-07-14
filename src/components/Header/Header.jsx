@@ -3,8 +3,7 @@ import "./Header.css";
 import { useNavigate } from "react-router";
 
 export const Header = () => {
-	const navigate= useNavigate();
-
+	const navigate = useNavigate();
 
 	return (
 		<div>
@@ -14,11 +13,10 @@ export const Header = () => {
 					<h3>FilmRolls</h3>
 				</div>
 
-				<div className="header-btn" > 
+				<div className="header-btn">
 					<button> light mode </button>
-					<button onClick={()=>navigate('/signin')} > sign in </button>
-					<button onClick={()=>navigate('/signup')} > sign up</button>
-
+					<button onClick={() => navigate("/signin")}> sign in </button>
+					<button onClick={() => navigate("/signup")}> sign up</button>
 				</div>
 			</div>
 		</div>

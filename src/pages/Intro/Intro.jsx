@@ -6,7 +6,7 @@ import Typed from "typed.js";
 export const Intro = () => {
 	const [visible, setVisible] = useState(false);
 	const navigate = useNavigate();
-	const title = `Tired of searching movies and series?`;
+	const title = `Tired of searching movies and series?`;	
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
